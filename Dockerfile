@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y unzip \
     && unzip typecho_lanyon_theme.zip && mv ./lanyon-typecho-master /var/www/html/usr/themes/lanyon-typecho \
     && chmod -R 777 /var/www/html && chmod +x /entrypoint.sh \
     && rm -rf /tmp/* \
-    && apt-get purge -y --auto-remove unzip
+    && apt-get purge -y --auto-remove unzip \
     && chown -R www-data:www-data /var/www/html/usr/uploads
 VOLUME /data
 
