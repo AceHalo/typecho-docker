@@ -1,7 +1,7 @@
 ---
 typecho:
   restart: always
-  image: derekamz/typecho:latest
+  image: zeroix/typecho:latest
   volumes:
     - /data:/data
   ports:
