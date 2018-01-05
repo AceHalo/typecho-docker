@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y unzip \
     && chmod -R 777 /var/www/html && chmod +x /entrypoint.sh \
     && rm -rf /tmp/* \
     && apt-get purge -y --auto-remove unzip
+    && chown -R www-data:www-data /var/www/html/usr/uploads
 VOLUME /data
 
 ENTRYPOINT ["/entrypoint.sh"]
