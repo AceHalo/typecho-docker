@@ -1,6 +1,6 @@
 FROM php:7.0-apache
-ENV TYPECHO_MAJOR_VER 1.0
-ENV TYPECHO_VER 14.10.10
+ENV TYPECHO_MAJOR_VER 1.1
+ENV TYPECHO_VER 17.10.30
 ADD entrypoint.sh /entrypoint.sh
 RUN apt-get update && apt-get install -y unzip \
     && cd /tmp && curl -o typecho.tar.gz -L https://github.com/typecho/typecho/releases/download/v$TYPECHO_MAJOR_VER-$TYPECHO_VER-release/$TYPECHO_MAJOR_VER.$TYPECHO_VER.-release.tar.gz \
