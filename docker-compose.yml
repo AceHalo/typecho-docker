@@ -3,6 +3,7 @@ typecho:
   restart: always
   image: zeroix/typecho-docker:latest
   volumes:
-    - /data:/data
+    - /data/typecho/data/:/data
+    - /data/typecho/data/uploads/:/var/www/html/usr/uploads
   ports:
     - "80:80"
