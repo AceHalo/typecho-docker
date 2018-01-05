@@ -4,6 +4,6 @@ typecho:
   image: zeroix/typecho-docker:latest
   volumes:
     - /data/typecho/data/:/data
-    - /data/typecho/data/uploads/:/var/www/html/usr/uploads
+    - /data/typecho/uploads/:/var/www/html/usr/uploads
   ports:
     - "80:80"
